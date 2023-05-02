@@ -19,7 +19,7 @@ body {
 
 }
 
-.header .nav{
+.header .nav {
     /* transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */
     /* transform-style: preserve-3d; */
 
@@ -48,6 +48,16 @@ body {
     height: 67px;
     width: 67px;
     margin-left: 2rem;
+
+    object-fit: cover;
+    transition: transform 0.8s;
+    cursor: pointer;
+
+}
+
+.header .nav .logo:hover img {
+    transform: scale(1.5);
+
 }
 
 .container .header .nav-items {
@@ -70,6 +80,11 @@ body {
 
 }
 
+.container .header .nav .nav-items .about a:hover {
+    color: #E34234;
+}
+
+
 .container .header .nav .nav-items .explore a {
     background-color: #E34234;
     color: #fff;
@@ -77,19 +92,29 @@ body {
     border-radius: 10px;
 }
 
-/* ----------parent section--------- */
+.container .header .nav .nav-items .explore a:hover {
+    background-color: #f5f4f4;
+    color: #E34234;
+}
 
+/* ----------parent section--------- */
 
 
 
 .container .header .parent-section .parent-content {
     display: flex;
     flex-direction: column;
+
     width: 90%;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 12rem;
+
+
+
+
+
 
 }
 
@@ -415,3 +440,56 @@ body {
 .part-five .img-2 {
     margin-right: -29rem;
 }
+
+
+
+/* from here the aboiut sections css will start  */
+
+
+
+.container .header .parent-section-1 .parent-content-1 {
+    display: flex;
+    flex-direction: column;
+
+    /* width: 90%; */
+    text-align: center;
+    /* justify-content: center;
+    align-items: center;
+    margin-top: 12rem; */
+    width: 53rem;
+    /* margin-top: 8rem; */
+    margin-left: 25%;
+    margin-top: 175px;
+
+}
+
+.container .parent-section-1 .first-heading {
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+
+}
+
+
+.container .header .parent-section-1 .parent-content-1 .bg-imgs {
+
+    position: absolute;
+    left:-20px;
+    top: 172px;
+
+}
+
+.container .header .parent-section-1 .parent-content-1 .bg-imgs-1 {
+
+ position: absolute;
+   right: 99px;
+
+
+}
+
+/* 
+.container .header .parent-section-1 .parent-content-1 .grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+   
+} */
